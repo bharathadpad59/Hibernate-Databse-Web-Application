@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 4 Nov, 2019 1:58:11 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.bharat.hibernateproject.UserClass" table="USERCLASS">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+        <property name="skills" type="java.lang.String">
+            <column name="SKILLS" />
+        </property>
+        <property name="nativeplace" type="java.lang.String">
+            <column name="NATIVEPLACE" />
+        </property>
+        <property name="year_of_passout" type="int">
+            <column name="YEAR_OF_PASSOUT" />
+        </property>
+        <property name="favsubject" type="java.lang.String">
+            <column name="FAVSUBJECT" />
+        </property>
+        <property name="MathsMarks" type="int">
+            <column name="MATHSMARKS" />
+        </property>
+        <property name="ScienceMarks" type="int">
+            <column name="SCIENCEMARKS" />
+        </property>
+        <property name="EnglishMarks" type="int">
+            <column name="ENGLISHMARKS" />
+        </property>
+        <property name="HistoryMarks" type="int">
+            <column name="HISTORYMARKS" />
+        </property>
+        <property name="GeographyMarks" type="int">
+            <column name="GEOGRAPHYMARKS" />
+        </property>
+        <property name="KannadaMarks" type="int">
+            <column name="KANNADAMARKS" />
+        </property>
+        <property name="Percentage" type="double">
+            <column name="PERCENTAGE" />
+        </property>
+    </class>
+</hibernate-mapping>
